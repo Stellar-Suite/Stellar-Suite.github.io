@@ -67,3 +67,8 @@ At this point in time, all 4 projects work together to display supertuxkart's fr
 
 # Repostories
 I am in the process of moving the repos out of my github account with a hell lot of random things into this github org but I'm trying to figure out how to move them without breaking my current git remotes.
+
+# Inspiration
+* [Selkies Gstreamer](https://github.com/selkies-project/selkies-gstreamer), state of the art open source webrtc over gstreamer.
+* [Netris](https://github.com/netrisdotme/netris) - Takes a new approach and focuses more towards running games.
+* [Neko](https://github.com/m1k1o/neko) - a sharable virtual desktop over webrtc using go's pion
