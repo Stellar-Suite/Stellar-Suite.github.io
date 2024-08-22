@@ -65,6 +65,11 @@ Hyperwarp's repository has more than one crate. Hyperwarp by itself can't stream
 
 At this point in time, all 4 projects work together to display supertuxkart's framebuffer in autovideosink to an acceptable degree. Current work is being done mostly on Hyperwarp still.
 
+# original archecticture diagram
+![image](https://github.com/user-attachments/assets/056d0f9a-525b-42a0-b475-5a39884d9e65)
+And the web frontend I've decided to call Astral.
+
+
 # Repostories
 I am in the process of moving the repos out of my github account with a hell lot of random things into this github org but I'm trying to figure out how to move them without breaking my current git remotes.
 
