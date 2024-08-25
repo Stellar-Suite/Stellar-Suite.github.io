@@ -54,6 +54,8 @@ Testing application
 '''
 ```
 
+It is also capable of running the underlying applications with debug tools such as valgrind and flamegraph for debugging crashes and performance issues that may be introduced. It manages audio via pulseaudio/pipewire null sinks.
+
 ## Hyperwarp
 Most of the focus for the past few weeks has been here. It's the most time consuming, nontrivial, and cursed part of the project. 
 Hyperwarp is a big Rust based `LD_PRELOAD` library that invasively modifies (good luck running this on a game with anticheat) the runtime behavior of any binary it is injected to. 
