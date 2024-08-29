@@ -1,7 +1,7 @@
 # Project Info
 The Stellar Suite is a funny name used to refer to the 3 subprojects: Astral, Stargate, Hyperwarp. These projects work together to provide a complete remote streaming experience. Astral (a vite react app) serves as a frontend to Stargate (a very simple express backend) which then launches applications with Hyperwarp injected into them. Essentially in more detail...
 
-## [Astral](https://github.com/Stellar-Suite/)
+## [Astral](https://github.com/Stellar-Suite/Astral)
 Minimal application launcher ui, to be worked on later. Most of it was written in the Summer of 2023 but it got quite updated as of recently. A stack of Vite, React, and Tailwind with shadcn-ui is used. The interface acts as a client to a Stargate server of your choosing, and ui takes inspiration from a certain app. Astral communicates with the Stargate backend and sends inputs through a shared protocol defined in the `stellar_protocol` crate in the Hyperwarp repo over a data channel for messaging with the "Host" program. Astral is not strictly requried, it is just a frontend and it's very possible I write a "native" client using react native at some point for different platforms. FOr now, Astral comes with limited mobile responsiveness and is usable on my only mobile testing device, which is an iphone which means inputs have not been tested. If anyone is able to test input on mobile please let me know in the [discussions section](https://github.com/orgs/Stellar-Suite/discussions). 
 ![image](https://github.com/Stellar-Suite/Stellar-Suite.github.io/assets/20248577/2331b491-39b9-427f-a913-30716a0083d8)
 ![image](https://github.com/Stellar-Suite/Stellar-Suite.github.io/assets/20248577/67db8559-f2d8-48a9-a948-350626f5d403)
