@@ -74,7 +74,7 @@ At this point in time, all 4 projects work together to make games that use SDL l
 
 # original archecticture diagram
 ![image](https://github.com/user-attachments/assets/056d0f9a-525b-42a0-b475-5a39884d9e65)
-And the web frontend I've decided to call Astral.
+For the web frontend I've decided to call Astral.
 
 
 # Repostories
