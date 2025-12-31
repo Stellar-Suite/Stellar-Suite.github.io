@@ -79,6 +79,6 @@ I am in the process of moving the repos out of my github account with a hell lot
 
 # Inspiration
 These projects you should also check out.
-* [Selkies Gstreamer](https://github.com/selkies-project/selkies-gstreamer) - state of the art open source webrtc over gstreamer.
+* [Selkies](https://github.com/selkies-project/selkies) - state of the art open source desktop streaming via a variety of methods (not just webrtc).
 * [Netris](https://github.com/netrisdotme/netris) - Takes a new approach and focuses more towards running games.
 * [Neko](https://github.com/m1k1o/neko) - a sharable virtual desktop over webrtc using go's pion
