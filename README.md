@@ -57,6 +57,9 @@ Testing application
 It is also capable of running the underlying applications with debug tools such as valgrind and flamegraph for debugging crashes and performance issues that may be introduced. It manages audio via pulseaudio/pipewire null sinks.
 
 ## [Hyperwarp](https://github.com/Stellar-Suite/Hyperwarp)
+
+**Hyperwarp is an optional component, you may run streamerd standalone now without injecting into a process by adding new flags to streamerd.**
+
 Most of the focus for the past few weeks has been here. It's the most time consuming, nontrivial, and cursed part of the project. 
 Hyperwarp is a big Rust based `LD_PRELOAD` library that invasively modifies (good luck running this on a game with anticheat) the runtime behavior of any binary it is injected to. 
 A variety of things are hooked into like swapbuffers and it currently supports OpenGL only but at this point in time it's "capture" feature capability "works" as a MVP but there are some caveats (performance possibly) that will be listed in the Hyperwarp docs soon
@@ -67,7 +70,7 @@ Oh yea it's also configured with environment variables that are meant to be cont
 ### [streamerd](https://github.com/Stellar-Suite/Hyperwarp/tree/master/streamerd)
 Hyperwarp's repository has more than one crate. Hyperwarp by itself can't stream it's framebuffer by design, the most it can do is provide a unix socket or similar to control the process as well as the capture mode which provides the current framebuffer as a raw image in `/dev/shm` (this will def change with future capture methods). There is a seperate binary crate called `streamerd` (streamer daemon) that connects to that unix socket and feeds the frames into Gstreamer (which has proven to work before based off a [poc of abusing it to play minecraft remotely](https://github.com/javaarchive/MineWarp) ), but currently it only goes to the `autovideosink` element for testing. They share a crate called `stellar_protocol` to share protocol definitions and standardized serialzie/deserialize functions. streamerd is designed so in the future it should be modular enough to accept inputs from sources other than the Hyperwarp shared library to be streamed.
 
-At this point in time, all 4 projects work together to make Celeste playable over the local network but more work is being done to stabilize streamerd for multiuser use.
+At this point in time, all 4 projects work together to make games that use SDL like Celeste playable over the local network but more work is being done to stabilize streamerd for multiuser use.
 
 # original archecticture diagram
 ![image](https://github.com/user-attachments/assets/056d0f9a-525b-42a0-b475-5a39884d9e65)
